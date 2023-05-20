@@ -1,7 +1,7 @@
 {
- "name": "Zbin-Wabot",
+ "name": "Mafia Shop",
  "version": "1.0.0",
- "description": "Bot Wea Mudah Digunakan",
+ "description": "Bot Mafia Mudah Digunakan",
  "main": "main.js",
  "directories": {
   "lib": "lib",
@@ -31,6 +31,5 @@
   "request": "^2.81.0",
   "spinnies": "^0.5.1",
   "util": "^0.12.3",
-  "yt-search": "^2.7.5"
  }
 }
