@@ -95,12 +95,10 @@ const yts = require('yt-search')
 const ggs = require('google-it')
 
 const antilenk = JSON.parse(fs.readFileSync('./src/antilink.json'))
-const simin = JSON.parse(fs.readFileSync('./src/simi.json'))
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
-const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
 const chatban = JSON.parse(fs.readFileSync('./src/banchat.json'))
 prefix = `z`
-botname = 'Zbin-wabot'
+botname = 'Mafia Shop'
 blocked = []
 
 function kyun(seconds){
@@ -197,7 +195,7 @@ async function starts() {
   const args = body.trim().split(/ +/).slice(1)
   const isCmd = body.startsWith(prefix)
   const botNumber = client.user.jid
-  const ownerNumber = ["6285230467582@s.whatsapp.net","62815150192843@s.whatsapp.net","6282331218665@s.whatsapp.net","6282145024224@s.whatsapp.net","6285807107404@s.whatsapp.net","62895343001883@s.whatsapp.net","6281216654518@s.whatsapp.net","6283128671683@s.whatsapp.net"]
+  const ownerNumber = ["6282137325755@s.whatsapp.net"]
   const arya = ["6289610916999@s.whatsapp.net"]
 	const isGroup = from.endsWith('@g.us')
 	const sender = isGroup ? msg.participant : msg.key.remoteJid
@@ -209,7 +207,6 @@ async function starts() {
 	const isBotGroupAdmins = groupAdmins.includes(botNumber) || false
 	const isGroupAdmins = groupAdmins.includes(sender) || false
 	const isWelkom = isGroup ? welkom.includes(from) : false
-	const isNsfw = isGroup ? nsfw.includes(from) : false
 	const isOwner = ownerNumber.includes(sender)
   const isBanChat = chatban.includes(from)
 	if (isBanChat && !isOwner) return
