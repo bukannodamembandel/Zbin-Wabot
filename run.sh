@@ -1,4 +1,4 @@
 clear
-toilet -f slant "Zbin-wabot"
+toilet -f slant "Mafia Shop"
 echo "[ ! ] Starting Bot"
 npm start 
